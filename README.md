@@ -19,7 +19,7 @@ npm run build && npm start   # produção
 |---|---|
 | Link oficial do AppBarber | `.env.local` → `NEXT_PUBLIC_APPBARBER_URL` (enquanto vazio, os botões AGENDAR rolam até a seção final) |
 | Logotipo original | colocar em `public/images/` e definir `SITE.logoSrc` em `src/lib/config.ts` (enquanto vazio, aparece um wordmark provisório em texto) |
-| Fotos reais da Barber VIP | `public/images/` e campo `src` em `src/data/content.ts` (hero vertical e horizontal, serviços, essência, club, equipe, galeria) |
+| Fotos reais da Barber VIP | `public/images/` e campo `src` em `src/data/content.ts`. Já estão em uso: logo, equipe, interior (recortes). **Faltam fotos de cortes, degradês e barbas** (galeria e serviços) |
 | Preços, planos, equipe, textos | `src/data/content.ts` (os textos atuais são **provisórios**; preço só aparece se `price` for preenchido) |
 
 Sem `src`, cada foto mostra um bloco provisório identificado. Nenhuma foto de terceiros é usada.

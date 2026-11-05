@@ -19,15 +19,19 @@ export function Services() {
 
       <ul className="services" role="list">
         {SERVICES.map((service) => (
-          <li key={service.id} className="service-card">
-            <div className="service-card__media">
-              <Photo
-                src={service.image.src}
-                alt={service.image.alt}
-                sizes="(min-width: 1024px) 25vw, (min-width: 768px) 50vw, 78vw"
-                placeholderLabel={service.name.toUpperCase()}
-              />
-            </div>
+          <li
+            key={service.id}
+            className={`service-card ${service.image.src ? "" : "service-card--text"}`}
+          >
+            {service.image.src && (
+              <div className="service-card__media">
+                <Photo
+                  src={service.image.src}
+                  alt={service.image.alt}
+                  sizes="(min-width: 1024px) 25vw, (min-width: 768px) 50vw, 78vw"
+                />
+              </div>
+            )}
             <div className="service-card__body">
               <h3 className="service-card__name">{service.name}</h3>
               <p className="service-card__text">{service.description}</p>

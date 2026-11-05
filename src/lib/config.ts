@@ -21,7 +21,7 @@ export const SITE = {
    * Caminho do logotipo original (PNG/SVG com fundo transparente),
    * por exemplo "/images/logo.png". Vazio = usa um wordmark de texto provisório.
    */
-  logoSrc: "",
+  logoSrc: "/images/logo.png" as string,
 } as const;
 
 export const KEYS = {

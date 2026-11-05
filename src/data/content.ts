@@ -22,12 +22,12 @@ export const NAV = [
 
 export const HERO = {
   mobile: {
-    src: "", // foto vertical de um barbeiro trabalhando
-    alt: "Barbeiro da Barber VIP realizando um corte",
+    src: "/images/hero-mobile.jpg",
+    alt: "Equipe de barbeiros da Barber VIP",
   },
   desktop: {
-    src: "", // foto horizontal ampla
-    alt: "Ambiente e barbeiros da Barber VIP",
+    src: "/images/hero-desktop.jpg",
+    alt: "Equipe de barbeiros da Barber VIP",
   },
 } as const;
 
@@ -72,8 +72,8 @@ export const ESSENCE = {
     "Na Barber VIP, cada atendimento é pensado para valorizar quem você é. Técnica, atenção e um ambiente à altura para você sair daqui confiante.",
     "Não entregamos apenas um corte: entregamos uma experiência cuidadosa, do primeiro ao último detalhe.",
   ],
-  photoMain: { alt: "Interior da Barber VIP" } as ImageRef,
-  photoSecondary: { alt: "Barbeiro da Barber VIP em atendimento" } as ImageRef,
+  photoMain: { src: "/images/essence-main.jpg", alt: "Interior da Barber VIP" } as ImageRef,
+  photoSecondary: { src: "/images/essence-second.jpg", alt: "Produtos na prateleira da Barber VIP" } as ImageRef,
 };
 
 export type ClubPlan = {
@@ -88,7 +88,7 @@ export const CLUB = {
   eyebrow: "Barber VIP Club",
   intro:
     "Assinatura para quem quer estar sempre em dia com o visual, com prioridade e benefícios exclusivos.",
-  background: { alt: "Atendimento na Barber VIP" } as ImageRef,
+  background: { src: "/images/club.jpg", alt: "Interior da Barber VIP" } as ImageRef,
   plans: [
     {
       id: "essencial",
@@ -112,9 +112,9 @@ export const CLUB = {
 export type TeamMember = { id: string; name: string; role: string; image: ImageRef };
 
 export const TEAM: TeamMember[] = [
-  { id: "b1", name: "Barbeiro 01", role: "Barbeiro", image: { alt: "Barbeiro da equipe Barber VIP" } },
-  { id: "b2", name: "Barbeiro 02", role: "Barbeiro", image: { alt: "Barbeiro da equipe Barber VIP" } },
-  { id: "b3", name: "Barbeiro 03", role: "Barbeiro", image: { alt: "Barbeiro da equipe Barber VIP" } },
+  { id: "b1", name: "Barbeiro 01", role: "Barbeiro", image: { src: "/images/team-1.jpg", alt: "Barbeiro da equipe Barber VIP" } },
+  { id: "b2", name: "Barbeiro 02", role: "Barbeiro", image: { src: "/images/team-2.jpg", alt: "Barbeiro da equipe Barber VIP" } },
+  { id: "b3", name: "Barbeiro 03", role: "Barbeiro", image: { src: "/images/team-3.jpg", alt: "Barbeiro da equipe Barber VIP" } },
 ];
 
 export type GalleryItem = {
@@ -129,11 +129,11 @@ export type GalleryItem = {
  * (use múltiplos de 7 para fechar a grade sem espaços vazios).
  */
 export const GALLERY: GalleryItem[] = [
-  { id: "g1", alt: "Degradê feito na Barber VIP", caption: "Degradê" },
-  { id: "g2", alt: "Corte masculino feito na Barber VIP", caption: "Corte masculino" },
-  { id: "g3", alt: "Barba feita na Barber VIP", caption: "Barba" },
-  { id: "g4", alt: "Acabamento feito na Barber VIP", caption: "Acabamento" },
-  { id: "g5", alt: "Barbeiro da Barber VIP trabalhando", caption: "Profissionais em ação" },
-  { id: "g6", alt: "Ambiente da Barber VIP", caption: "Nosso ambiente" },
-  { id: "g7", alt: "Equipe Barber VIP", caption: "Equipe Barber VIP" },
+  { id: "g1", src: "/images/gal-1.jpg", alt: "Logotipo Barber VIP na parede da barbearia", caption: "Nossa marca" },
+  { id: "g2", src: "/images/gal-2.jpg", alt: "Mezanino de vidro da Barber VIP", caption: "Ambiente" },
+  { id: "g3", src: "/images/gal-3.jpg", alt: "Equipe Barber VIP", caption: "Equipe Barber VIP" },
+  { id: "g4", src: "/images/gal-4.jpg", alt: "Produtos nas prateleiras da Barber VIP", caption: "Produtos" },
+  { id: "g5", src: "/images/gal-5.jpg", alt: "Poltronas da Barber VIP", caption: "Detalhes" },
+  { id: "g6", src: "/images/gal-6.jpg", alt: "Barbeiros da Barber VIP", caption: "Time VIP" },
+  { id: "g7", src: "/images/gal-7.jpg", alt: "Interior da Barber VIP", caption: "Nosso ambiente" },
 ];
