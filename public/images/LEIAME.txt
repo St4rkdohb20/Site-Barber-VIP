@@ -1,6 +1,0 @@
-Coloque aqui as fotografias reais da Barber VIP e o logotipo original.
-Depois preencha os caminhos (ex.: "/images/hero-mobile.jpg") em src/data/content.ts
-e o logotipo em src/lib/config.ts (SITE.logoSrc).
-
-Use apenas fotos fornecidas pela Barber VIP ou imagens autorizadas da marca.
-Dica: exporte em JPG/WebP com ~1920px de largura no máximo; o Next.js gera as versões menores.
